@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:wght@300;400&display=swap');
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: steelblue;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.empty {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px black;
+    background-color: #fff;
+}
+
+.fill {
+    background-image: url('https://www.vets4pets.com/siteassets/species/dog/puppy/husky-puppy-on-dog-walk.jpg?w=585&scale=down');
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hold {
+    border: solid 5px #ccc;
+}
+
+.hovered {
+    background-color: #333;
+    border-color: #fff;
+    border-style: dashed;
+}
+
+@media (max-width: 800px){
+    body {
+        flex-direction: column;
+    }
+}
